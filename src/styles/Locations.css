@@ -1,0 +1,125 @@
+.map-section {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.map-placeholder {
+    background-color: var(--off-white);
+    height: 400px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.map-overlay {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-overlay h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.map-visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map-pin {
+    position: absolute;
+    color: var(--secondary);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    animation: bounce 2s infinite;
+}
+
+.pin-1 {
+    top: 30%;
+    left: 40%;
+    animation-delay: 0s;
+}
+
+.pin-2 {
+    top: 60%;
+    left: 70%;
+    animation-delay: 0.5s;
+}
+
+.pin-3 {
+    top: 45%;
+    left: 20%;
+    animation-delay: 1s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.locations-list {
+    background-color: var(--bg-light);
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.location-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.3s;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.location-icon {
+    background-color: var(--primary);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.location-info h3 {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.location-info p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}

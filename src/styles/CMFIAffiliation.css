@@ -1,0 +1,99 @@
+.cmfi-intro {
+    background-color: var(--white);
+}
+
+.cmfi-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cmfi-text h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.cmfi-text p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.cmfi-logo-placeholder {
+    background-color: var(--off-white);
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    border: 2px dashed #ddd;
+}
+
+.cmfi-logo-placeholder span {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cmfi-vision {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+}
+
+.vision-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vision-box h2 {
+    margin-bottom: 30px;
+    color: var(--secondary);
+}
+
+.vision-box p {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.vision-features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature svg {
+    color: var(--secondary);
+}
+
+.feature span {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .cmfi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-features {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

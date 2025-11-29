@@ -1,0 +1,81 @@
+.mission-core {
+    background-color: var(--white);
+}
+
+.mission-content {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mission-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+.mission-content>p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.pillar {
+    padding: 30px;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.pillar:hover {
+    transform: translateY(-5px);
+    background-color: var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.pillar-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.pillar h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.scripture-focus {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.scripture-focus blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.scripture-focus cite {
+    font-size: 1.1rem;
+    color: var(--secondary);
+    font-weight: 600;
+}

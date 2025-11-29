@@ -1,0 +1,57 @@
+.prayer-points {
+    background-color: var(--white);
+}
+
+.prayer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+}
+
+.prayer-list h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.prayer-list p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.prayer-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.prayer-list li {
+    margin-bottom: 15px;
+    color: var(--text-dark);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.prayer-form-card {
+    background-color: var(--bg-light);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+}
+
+.prayer-form-card h2 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.prayer-form-card p {
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    .prayer-grid {
+        grid-template-columns: 1fr;
+    }
+}

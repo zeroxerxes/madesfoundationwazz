@@ -1,0 +1,148 @@
+.why-give {
+    background-color: var(--white);
+}
+
+.give-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.give-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.give-content p {
+    color: var(--text-light);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.impact-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+.impact-list li svg {
+    color: var(--secondary);
+    flex-shrink: 0;
+}
+
+.give-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.giving-options {
+    background-color: var(--bg-light);
+}
+
+.section-title-center {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 50px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.option-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid #eee;
+}
+
+.option-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.option-card.featured {
+    border: 2px solid var(--secondary);
+    transform: scale(1.05);
+}
+
+.option-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.option-icon {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.option-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.option-card p {
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.bank-details {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.bank-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    border-left: 5px solid var(--primary);
+}
+
+.bank-card h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.bank-info {
+    margin: 20px 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.bank-info p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .give-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .option-card.featured {
+        transform: none;
+    }
+
+    .option-card.featured:hover {
+        transform: translateY(-10px);
+    }
+}
