@@ -21,9 +21,9 @@ const Donate = () => {
                                 Your support provides food for the hungry, medicine for the sick, and the Gospel to the lost.
                             </p>
                             <ul className="impact-list">
-                                <li><CheckCircle size={20} /> <strong>$30</strong> feeds a street child for a month.</li>
-                                <li><CheckCircle size={20} /> <strong>$50</strong> provides medical care for a widow.</li>
-                                <li><CheckCircle size={20} /> <strong>$100</strong> sponsors vocational training for a youth.</li>
+                                <li><CheckCircle size={20} /> <strong>18,000 XAF</strong> feeds a street child for a month.</li>
+                                <li><CheckCircle size={20} /> <strong>30,000 XAF</strong> provides medical care for a widow.</li>
+                                <li><CheckCircle size={20} /> <strong>60,000 XAF</strong> sponsors vocational training for a youth.</li>
                             </ul>
                         </div>
                         <div className="give-image">
