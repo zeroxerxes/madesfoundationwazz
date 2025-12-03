@@ -61,17 +61,26 @@ const Donate = () => {
 
             <section className="section bank-details">
                 <div className="container">
-                    <div className="bank-card">
-                        <h3>Bank Transfer Details</h3>
-                        <p>You can also give directly via bank transfer:</p>
-                        <div className="bank-info">
-                            <p><strong>Bank Name:</strong> [Bank Name]</p>
-                            <p><strong>Account Name:</strong> MADES - CMFI</p>
-                            <p><strong>Account Number:</strong> [Account Number]</p>
-                            <p><strong>Swift Code:</strong> [Swift Code]</p>
+                    <h2 className="section-title-center">Mobile Money Transfer</h2>
+                    <div className="payment-methods">
+                        <div className="bank-card">
+                            <h3>MTN Momo</h3>
+                            <p>Send your donation via MTN Mobile Money:</p>
+                            <div className="bank-info">
+                                <p><strong>Phone Number:</strong> +237 672 343 460</p>
+                                <p><strong>Account Name:</strong> Echondong Michael Abitah</p>
+                            </div>
                         </div>
-                        <p className="note">Please contact us after making a transfer so we can acknowledge your gift.</p>
+                        <div className="bank-card">
+                            <h3>Orange Money</h3>
+                            <p>Send your donation via Orange Money:</p>
+                            <div className="bank-info">
+                                <p><strong>Phone Number:</strong> +237 691 385 992</p>
+                                <p><strong>Account Name:</strong> Echondong Michael Abitah</p>
+                            </div>
+                        </div>
                     </div>
+                    <p className="note">Please contact us after making a transfer so we can acknowledge your gift and provide a receipt.</p>
                 </div>
             </section>
         </div>
